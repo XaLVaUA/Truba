@@ -7,7 +7,7 @@ A lightweight C# library for method piping, enabling fluent and functional-style
 Install the `Truba` package via NuGet:
 
 ```bash
-dotnet add package Truba.Core --version 1.0.0
+dotnet add package Truba.Core --version 1.0.1
 ```
 
 Or use the NuGet Package Manager in Visual Studio to search for `Truba.Core`.
