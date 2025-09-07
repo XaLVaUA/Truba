@@ -8,7 +8,4 @@ public static class Extensions
 
     public static Pipe<TResult> Pipe<TArgument, TResult>(this Pipe<TArgument> pipe, Func<TArgument, TResult> func) =>
         Logic.GetPipe(pipe, func);
-
-    public static Pipe<TResult> Pipe<TArgument, TResult>(this TArgument value, Func<TArgument, TResult> func) =>
-        Logic.GetPipe(func(value));
 }

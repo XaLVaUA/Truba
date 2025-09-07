@@ -8,7 +8,7 @@
 
   <PropertyGroup>
 	<PackageId>Truba.Core</PackageId>
-	<Version>1.0.0</Version>
+	<Version>1.0.1</Version>
 	<Authors>Yaroslav Nozhenko</Authors>
 	<Company>Yaroslav Nozhenko</Company>
 	<Description>A lightweight C# library for method piping, enabling fluent and functional-style programming. The Pipe struct and extension methods allow chaining operations on values in a readable, composable way, similar to functional programming pipelines.</Description>

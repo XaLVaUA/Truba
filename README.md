@@ -25,6 +25,7 @@ using Truba.Core;
 
 int result =
     1337
+        .Pipe()
         .Pipe(x => x + 5)
         .Pipe(x => x * 2)
         .Value(); // Returns 2684
@@ -39,6 +40,7 @@ using Truba.Core;
 
 string result =
     1337
+        .Pipe()
         .Pipe(x => x + 5)
         .Pipe(x => $"label: {x}")
         .Pipe(str => str.ToUpper())

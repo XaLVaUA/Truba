@@ -45,26 +45,4 @@ public sealed class ExtensionsTests
         static int Add5(int value) => value + 5;
         static string WithLabel(int value) => $"label: {value}".ToUpper();
     }
-
-    [TestMethod]
-    public void Pipe_SeveralMethodsWithInitial_ReturnsCorrectValue()
-    {
-        const string expectedValue = "LABEL: 1342";
-        const int initialValue = 1337;
-
-        var pipe =
-            initialValue
-                .Pipe(Add5)
-                .Pipe(WithLabel)
-                .Pipe(str => str.ToUpper());
-
-        var actualValue = pipe.Value();
-
-        Assert.AreEqual(expectedValue, actualValue);
-
-        return;
-
-        static int Add5(int value) => value + 5;
-        static string WithLabel(int value) => $"label: {value}".ToUpper();
-    }
 }
