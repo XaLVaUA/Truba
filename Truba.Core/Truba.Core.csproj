@@ -7,17 +7,23 @@
   </PropertyGroup>
 
   <PropertyGroup>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<PackageId>Truba.Core</PackageId>
-	<Version>1.0.1</Version>
+	<Version>1.0.2</Version>
 	<Authors>Yaroslav Nozhenko</Authors>
 	<Company>Yaroslav Nozhenko</Company>
-	<Description>A lightweight C# library for method piping, enabling fluent and functional-style programming. The Pipe struct and extension methods allow chaining operations on values in a readable, composable way, similar to functional programming pipelines.</Description>
+	<Description>A lightweight C# library for method piping, enabling fluent and functional-style programming.</Description>
 	<PackageTags>piping;functional;fluent;extension-methods</PackageTags>
 	<RepositoryUrl>https://github.com/XaLVaUA/Truba</RepositoryUrl>
 	<PackageLicenseExpression>Unlicense</PackageLicenseExpression>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<IncludeSymbols>true</IncludeSymbols>
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	<PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+	<None Include="icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
 </Project>
