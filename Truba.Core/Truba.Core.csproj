@@ -9,9 +9,8 @@
   <PropertyGroup>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<PackageId>Truba.Core</PackageId>
-	<Version>1.0.2</Version>
+	<Version>1.0.3</Version>
 	<Authors>Yaroslav Nozhenko</Authors>
-	<Company>Yaroslav Nozhenko</Company>
 	<Description>A lightweight C# library for method piping, enabling fluent and functional-style programming.</Description>
 	<PackageTags>piping;functional;fluent;extension-methods</PackageTags>
 	<RepositoryUrl>https://github.com/XaLVaUA/Truba</RepositoryUrl>
