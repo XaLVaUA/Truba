@@ -1,10 +1,10 @@
-﻿# Truba
+﻿# Truba.Core
 
 A lightweight C# library for method piping, enabling fluent and functional-style programming.
 
 ## Installation
 
-Install the `Truba` package via NuGet:
+Install the `Truba.Core` package via NuGet:
 
 ```bash
 dotnet add package Truba.Core
