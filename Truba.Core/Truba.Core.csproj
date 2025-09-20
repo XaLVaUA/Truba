@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<PackageId>Truba.Core</PackageId>
+	<Version>2.0.0</Version>
+	<Authors>Yaroslav Nozhenko</Authors>
+	<Description>A lightweight C# library for method piping, enabling fluent and functional-style programming.</Description>
+	<PackageTags>piping;functional;fluent;extension-methods</PackageTags>
+	<RepositoryUrl>https://github.com/XaLVaUA/Truba</RepositoryUrl>
+	<PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<IncludeSymbols>true</IncludeSymbols>
+	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	<PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<None Include="icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
