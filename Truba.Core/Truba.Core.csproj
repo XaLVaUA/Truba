@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+	<TargetFramework>netstandard2.0</TargetFramework>
+	<LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -9,7 +10,7 @@
   <PropertyGroup>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<PackageId>Truba.Core</PackageId>
-	<Version>2.1.0</Version>
+	<Version>2.1.1</Version>
 	<Authors>Yaroslav Nozhenko</Authors>
 	<Description>A lightweight C# library for method piping, enabling fluent and functional-style programming.</Description>
 	<PackageTags>piping;functional;fluent;extension-methods</PackageTags>
