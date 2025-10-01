@@ -26,6 +26,44 @@ var result =
         .Pipe(static str => str.ToUpper());
 ```
 
+Chain operations on a async value using `PipeAsync`:
+
+```csharp
+using Truba.Core;
+
+var result =
+    await initialValue
+        .PipeAsync(Add5Async)
+        .PipeAsync(WithLabelAsync)
+        .PipeAsync(static str => Task.FromResult(str.ToUpper()));
+```
+
+Chain deferred operations on a value using `PipeV`, `PipeD` and `PipeR`:
+
+```csharp
+using Truba.Core;
+
+var result =
+    initialValue
+        .PipeV(Add5)
+        .PipeD(WithLabel)
+        .PipeD(static str => str.ToUpper())
+        .PipeR();
+```
+
+Chain deferred operations on a async value using `PipeVAsync`, `PipeDAsync` and `PipeRAsync`:
+
+```csharp
+using Truba.Core;
+
+var result =
+    await initialValue
+        .PipeVAsync(Add5Async)
+        .PipeDAsync(WithLabelAsync)
+        .PipeDAsync(static str => Task.FromResult(str.ToUpper()))
+        .PipeRAsync();
+```
+
 ## License
 
 This project is dedicated to the public domain under the Unlicense. See the [LICENSE](LICENSE) file for details.
